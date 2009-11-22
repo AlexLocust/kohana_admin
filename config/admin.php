@@ -22,6 +22,17 @@ $config['navigation'] = array(
 );
 
 /*
+ * Allows load unexisted administrators from ldap catalogue.
+ */
+$config['ldap'] = array(
+	'enabled' => TRUE,
+	'ldap_host' => 'ldap://ferrum.at.webstein.ru/',
+	'ldap_rdn' => 'webstein_admin@at.webstein.ru',
+	'ldap_pass' => 'websteinpass',
+);
+	
+
+/*
  * Dependent modules
 */
 $config['modules'] = array(
